@@ -6,10 +6,10 @@
   <title>Document</title>
 
   <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/three.js/build/ar.js"></script>
-    <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
-    <script src="https://raw.githack.com/fcor/arjs-gestures/master/dist/gestures.js"></script>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/three.js/build/ar.js"></script>
+  <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+  <script src="https://raw.githack.com/fcor/arjs-gestures/master/dist/gestures.js"></script>
 </head>
 <body style='margin : 0px; overflow: hidden;'>
   <div class="arjs-loader">
@@ -19,11 +19,11 @@
   <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'
   gesture-detector>
   <a-assets>
-  <a-asset-item id="cc" src="logo_red_riyal.glb"></a-asset-item>
+  <a-asset-item id="codecell" src="logo_red_riyal.glb"></a-asset-item>
   </a-assets>
   <a-marker id="animated-marker" type='barcode' value='1' raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" smooth="true">
     <a-entity
-      gltf-model="#cc"
+      gltf-model="#codecell"
       scale="5 5 5"  <!-- Adjusted scale -->
       position="0 0 -10"  <!-- Moved back -->
       class="clickable"
