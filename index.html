@@ -21,7 +21,7 @@
   <a-assets>
   <a-asset-item id="tamboo" src="amd_cpu_am5_ryzen_9_7950x_4.5ghz.glb"></a-asset-item>
   </a-assets>
-  <a-marker id="dynamic-marker" type='barcode' value='' raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" smooth="true">
+  <a-marker id="animated-marker" type='barcode' value='1' raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" smooth="true">
     <a-entity
       gltf-model="#tamboo"
       scale="5 5 5" 
@@ -32,24 +32,7 @@
     </a-entity>
   </a-marker>
   <a-entity camera fov="80"></a-entity>
-
+  
   </a-scene>
-
-  <script>
-    function handleMarkerDetection() {
-      console.log("Marker Detected: ", marker);
-    }
-
-    const marker = document.getElementById("dynamic-marker");
-
-    marker.addEventListener("markerFound", function () {
-      handleMarkerDetection(marker);
-    });
-
-    marker.addEventListener('markerLost', function () {
-      console.log("Marker lost");
-    });
-  </script>
-
   </body>
 </html>
