@@ -23,15 +23,15 @@
   </a-assets>
   <a-marker id="animated-marker" type='barcode' value='1' raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" smooth="true">
     <a-entity
-    gltf-model="#tamboo"
-    scale="5 5 5"
-    position="0 0 -10"
-    class="clickable"
-    gesture-handler="minScale: 0.25; maxScale: 10"
-    rotation="90 0 180">  <!-- Adjusted rotation to correct tilt -->
-  </a-entity>
+      gltf-model="#tamboo"
+      scale="5 5 5"  <!-- Adjusted scale -->
+      position="0 0 -10"
+      class="clickable"
+      gesture-handler="minScale: 0.25; maxScale: 10"
+      rotation="90 0 180">
+    </a-entity>
   </a-marker>
-  <a-entity camera fov="80"></a-entity>  <!-- Adjusted camera FOV -->
+  <a-entity camera fov="80"></a-entity>
   
   </a-scene>
   </body>
