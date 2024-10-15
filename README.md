@@ -2,7 +2,7 @@
 
 This project demonstrates how to create an augmented reality experience using AR.js and a 3D model. The experience is accessed by scanning a QR code that directs users to the AR application.
 
-![QR Code](C:\repos\AR-cc\jelena-ristic-qr-code.jpg)
+![QR Code](jelena-ristic-qr-code.jpg)
 
 ## Idea Overview
 
